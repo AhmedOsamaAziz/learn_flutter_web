@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_web/helpers/responsive.dart';
+import 'package:learn_flutter_web/screens/homeScreen/smallScreen.dart';
 
 import 'largeScreen.dart';
 
@@ -12,6 +14,9 @@ class HomeScreen extends StatelessWidget {
           elevation: 10,
           backgroundColor: Colors.white,
         ),
-        body: LargeScreen());
+        body: Responsive(
+          largeScreen: LargeScreen(),
+          smallScreen: SmallScreen(),
+        ));
   }
 }
