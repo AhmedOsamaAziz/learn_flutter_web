@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learn_flutter_web/controllers/menuController.dart';
 
 import 'screens/homeScreen/homeScreen.dart';
 
 void main() {
+  Get.put(MenuController());
   runApp(const MyApp());
 }
 
