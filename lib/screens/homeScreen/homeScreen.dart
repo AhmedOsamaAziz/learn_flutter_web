@@ -7,11 +7,13 @@ import 'topNavigation.dart';
 
 class HomeScreen extends StatelessWidget {
   // const HomeScreen({Key? key}) : super(key: key);
-  final GlobalKey<ScaffoldState> scafoldKey = GlobalKey();
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: topNavigation(context, scafoldKey),
+      key: scaffoldKey,
+      appBar: topNavigation(context, scaffoldKey),
+      drawer: Drawer(),
       body: Responsive(
         largeScreen: LargeScreen(),
         smallScreen: SmallScreen(),
