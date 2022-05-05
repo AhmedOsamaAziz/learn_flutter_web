@@ -9,7 +9,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
           ? Row(
               children: [
                 Container(
-                  padding: EdgeInsets.only(left: 14),
+                  padding: const EdgeInsets.only(left: 14),
                   child: Image.asset(
                     "assets/icons/logo.png",
                     width: 24,
@@ -22,7 +22,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
               onPressed: () {
                 key.currentState?.openDrawer();
               },
-              icon: Icon(Icons.menu)),
+              icon: const Icon(Icons.menu)),
       title: CustomText(
         text: 'Dash Flow',
         color: dark,
@@ -31,7 +31,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
       actions: [
         IconButton(
           onPressed: () {},
-          icon: Icon(Icons.settings),
+          icon: const Icon(Icons.settings),
           color: dark.withOpacity(.7),
         ),
         Center(
@@ -39,14 +39,16 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.notifications),
+                icon: const Icon(Icons.notifications),
                 color: dark,
               ),
               Positioned(
+                top: 7,
+                right: 7,
                 child: Container(
                   width: 12,
                   height: 12,
-                  padding: EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
                     color: active,
                     borderRadius: BorderRadius.circular(30),
@@ -56,8 +58,6 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
                     ),
                   ),
                 ),
-                top: 7,
-                right: 7,
               ),
             ],
           ),
@@ -69,7 +69,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
             color: lightGrey,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 24,
         ),
         Center(
@@ -79,7 +79,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
             size: 14,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 16,
         ),
         Container(
@@ -88,8 +88,8 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
             borderRadius: BorderRadius.circular(30),
           ),
           child: Container(
-            padding: EdgeInsets.all(2),
-            margin: EdgeInsets.all(2),
+            padding: const EdgeInsets.all(2),
+            margin: const EdgeInsets.all(2),
             child: CircleAvatar(
               backgroundColor: light,
               child: Icon(
@@ -100,7 +100,7 @@ AppBar topNavigation(BuildContext context, GlobalKey<ScaffoldState> key) =>
           ),
         )
       ],
-      elevation: 10,
-      backgroundColor: Colors.white,
+      elevation: 0,
+      backgroundColor: light,
       iconTheme: IconThemeData(color: dark),
     );
