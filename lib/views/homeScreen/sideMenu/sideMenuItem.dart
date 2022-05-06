@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_web/helpers/responsive.dart';
-import 'package:learn_flutter_web/screens/homeScreen/sideMenu/horizontalMenuItem.dart';
-import 'package:learn_flutter_web/screens/homeScreen/sideMenu/verticalMenuItem.dart';
+import 'package:learn_flutter_web/views/homeScreen/sideMenu/horizontalMenuItem.dart';
+import 'package:learn_flutter_web/views/homeScreen/sideMenu/verticalMenuItem.dart';
 
 class SideMenuItem extends StatelessWidget {
   final String itemName;

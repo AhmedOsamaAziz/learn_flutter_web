@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:learn_flutter_web/constants/style.dart';
-import 'package:learn_flutter_web/models/routes.dart';
+import 'package:learn_flutter_web/routing/routes.dart';
 
 class MenuController extends GetxController {
   static MenuController instance = Get.find();

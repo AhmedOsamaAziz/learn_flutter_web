@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_web/helpers/responsive.dart';
-import 'package:learn_flutter_web/screens/homeScreen/layout/smallScreen.dart';
-import 'package:learn_flutter_web/screens/homeScreen/sideMenu/sideMenu.dart';
+import 'package:learn_flutter_web/views/homeScreen/layout/smallScreen.dart';
+import 'package:learn_flutter_web/views/homeScreen/sideMenu/sideMenu.dart';
 import 'layout/largeScreen.dart';
 import 'topNavigation.dart';
 

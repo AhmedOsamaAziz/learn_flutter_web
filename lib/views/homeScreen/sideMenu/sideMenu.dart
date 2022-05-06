@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:learn_flutter_web/constants/controllers.dart';
 import 'package:learn_flutter_web/constants/style.dart';
 import 'package:learn_flutter_web/helpers/responsive.dart';
-import 'package:learn_flutter_web/models/routes.dart';
-import 'package:learn_flutter_web/screens/homeScreen/sideMenu/sideMenuItem.dart';
+import 'package:learn_flutter_web/routing/routes.dart';
 import 'package:learn_flutter_web/sharedWidgets/customText.dart';
+import 'package:learn_flutter_web/views/homeScreen/sideMenu/sideMenuItem.dart';
 
 class SideMenu extends StatelessWidget {
   @override
@@ -62,7 +62,7 @@ class SideMenu extends StatelessWidget {
                         if (!menuController.isActive(itemName)) {
                           menuController.changeActiveItemTo(itemName);
                           if (Responsive.isSmallSize(context)) Get.back();
-                          // TODO :: go to item name Route
+                          navigationController.navigateTo(itemName);
                         }
                       },
                     ))

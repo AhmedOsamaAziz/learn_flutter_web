@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class SmallScreen extends StatelessWidget {
-  const SmallScreen({Key? key}) : super(key: key);
+class ClientPage extends StatelessWidget {
+  const ClientPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green,
+      child: Text('Clients'),
     );
   }
 }
