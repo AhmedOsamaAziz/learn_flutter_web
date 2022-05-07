@@ -6,12 +6,13 @@ import 'package:learn_flutter_web/controllers/menuController.dart';
 import 'screens/homeScreen/homeScreen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   Get.put(MenuController());
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // const MyApp({super.key});
 
   // This widget is the root of your application.
 
